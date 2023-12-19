@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.active{
+    @apply md:text-green-500 md:underline md:underline-offset-8 
+    text-white 
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.pagination li{
+    margin: 0px 5px;
+}
+.pagination a{
+    display: inline-flex;
+    padding: 5px 10px;
+    border: 1px solid #cccc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+}
+.pagination a:hover{
+    background-color: #ccc;
+}
+.pagination li.activePage{
+    background-color: rgb(56, 144, 27);
+    border-radius: 4px;
+    color: #fff;
+}
+.active-button{
+    color: rgb(67, 217, 17);
+    text-decoration-line: underline;
+    text-underline-offset: 8px;
+}
+@media (max-width:600px){
+    .sidebar{
+        display: none;
+    }
+}
