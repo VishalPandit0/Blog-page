@@ -34,7 +34,7 @@ const handleSubmit = (event) => {
   else{
 
     axios
-      .post('http://localhost:5000/addBlog', data)
+      .post('https://blog-page-ecru.vercel.app/addBlog', data)
       .then((response) => {
         console.log(response);
         event.target.reset();
