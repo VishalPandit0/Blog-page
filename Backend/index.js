@@ -7,7 +7,13 @@ const port = process.env.PORT || 5000;
 const fs = require('fs');
 
 // middlewares
-app.use(cors())
+app.use(cors(
+    {
+        origin:['https://react-blogpage.vercel.app'],
+        methods:['GET','POST'],
+        credentials:true
+    }
+))
 app.use(express.json())
 app.use(bodyParser.json());
 
