@@ -8,14 +8,14 @@ import About from './components/Pages/About.jsx';
 import Services from './components/Pages/Services';
 import Blog from './components/Pages/Blog';
 import Contact from './components/Pages/Contact';
-import AddBlog from './components/Pages/addBlog.jsx';
+import AddBlog from './components/Pages/AddBlog.jsx';
 
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import BlogOpen from './components/Pages/blogOpen.jsx';
+import BlogOpen from './components/Pages/BlogOpen.jsx';
 
 
 
