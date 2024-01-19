@@ -13,7 +13,7 @@ const BlogPage = () => {
 
   useEffect(()=>{
       async function fetchBlogs(){
-       let url=`http://localhost:5000/blogs?page=${currentPage}&limit=${pageSize}`;
+       let url=`https://blog-page-ecru.vercel.app/blogs?page=${currentPage}&limit=${pageSize}`;
        
       //  if any category selected 
        if(selectedCategory){
