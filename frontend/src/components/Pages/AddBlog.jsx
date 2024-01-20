@@ -11,7 +11,6 @@ function getDate() {
 
 const handleSubmit = (event) => {
   event.preventDefault();
-  const id = 1;
   const title = event.target.title.value.trim();
   const category = event.target.category.value.trim();
   const author = event.target.author.value.trim();
@@ -20,7 +19,7 @@ const handleSubmit = (event) => {
   const content = event.target.content.value.trim();
   const tags = event.target.tags.value.trim()
   const image ="https://techcrunch.com/wp-content/uploads/2022/07/GettyImages-1314165902.jpg?w=430&h=230&crop=1"
-  const data = {id, title,image, category, author, published_date, reading_time, content, tags,}
+  const data = { title,image, category, author, published_date, reading_time, content, tags,}
 
   if (!title || !category || !author || !reading_time || !content) {
     alert('Please fill in all required fields.');
