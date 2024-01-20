@@ -13,7 +13,7 @@ const BlogPage = () => {
 
   useEffect(()=>{
       async function fetchBlogs(){
-       let url=`https://se-h33n.onrender.com?page=${currentPage}&limit=${pageSize}`;
+       let url=`https://se-h33n.onrender.com/blogs?page=${currentPage}&limit=${pageSize}`;
        
       //  if any category selected 
        if(selectedCategory){

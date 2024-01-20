@@ -42,7 +42,8 @@ const handleSubmit = (event) => {
       .catch((error) => {
         console.log(error);
       })
-      alert("Blog Posted")
+      alert("Blog Posted Go to Blogs section")
+      
   }
 };
 
@@ -85,7 +86,7 @@ const AddBlog = () => {
 
           <div className='mt-8 items-center'>
             <label className='ml-5'  htmlFor="/">Tags  </label>
-            <input name='tags'  className= 'p-2 ml-12 mb-2 w-[40%] rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm ' type="text" placeholder='optional ' />
+            <input name='tags'  className= 'p-2 ml-12 mb-2 w-[40%] rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm ' type="text"  />
           </div>
 
 

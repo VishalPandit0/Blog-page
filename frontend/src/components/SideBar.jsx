@@ -6,7 +6,7 @@ const SideBar = () => {
     const [PopularBlog, setPopularBlog] = useState([]);
 
     useEffect(() => {
-        const url = 'http://localhost:5000/blogs';
+        const url = 'https://se-h33n.onrender.com/blogs';
         fetch(url).then(res => res.json()).then(data => setPopularBlog(data.slice(0, 15)))
 
     })
