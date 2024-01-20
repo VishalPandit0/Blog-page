@@ -1,26 +1,5 @@
 [
-  {
-    "id": 1,
-    "title": "fghjkkjhg",
-    "image": "https://techcrunch.com/wp-content/uploads/2022/07/GettyImages-1314165902.jpg?w=430&h=230&crop=1",
-    "category": "fghjk",
-    "author": "dfghj",
-    "published_date": "1 20,2024",
-    "reading_time": "7",
-    "content": "ghjkljhgfdghjkl",
-    "tags": "fghj"
-  },
-  {
-    "id": 1,
-    "title": "hgch",
-    "image": "https://techcrunch.com/wp-content/uploads/2022/07/GettyImages-1314165902.jpg?w=430&h=230&crop=1",
-    "category": "jc b",
-    "author": "bn",
-    "published_date": "1 20,2024",
-    "reading_time": "9",
-    "content": "vrghjkjhgf",
-    "tags": "n n nm"
-  },
+  
   {
     "id": 1,
     "title": "Meta debuts generative AI features for advertisers",
