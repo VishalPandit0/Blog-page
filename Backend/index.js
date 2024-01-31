@@ -5,6 +5,9 @@ const cors = require('cors')
 const blogs = require('./api/blogsData.json')
 const fs = require('fs');
 require('dotenv').config()
+const crypto = require('crypto');
+
+
 
 const port = process.env.PORT ;
 
@@ -32,6 +35,14 @@ app.get('/blogs/:id', (req, res) => {
 app.post('/addBlog', (req, res) => {
   try {
     const blogData = req.body;
+    const id = crypto.randomBytes(8).toString("hex"); // Generate random ID
+
+    // Parse the ID string to an integer
+    const numericId = parseInt(id, 16);
+
+    // Add the numeric ID to the blog data
+    blogData.id = numericId;
+
 
     // Read existing data from the JSON file
     let existingData = [];
