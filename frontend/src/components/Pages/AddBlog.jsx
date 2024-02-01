@@ -33,9 +33,8 @@ const handleSubmit = (event) => {
   else{
 
     axios
-      .post('https://se-h33n.onrender.com/addBlog', data)
+      .post('https://blogserver-j7ih.onrender.com/addBlog', data)
       .then((response) => {
-        console.log(response);
         event.target.reset();
       })
       .catch((error) => {
@@ -54,44 +53,44 @@ const AddBlog = () => {
       <div className='bg-black h-[100%] w-[90vh] my-10 border rounded-lg text-white'>
         <form className=' flex flex-col  space-y-7 mb-5' onSubmit={handleSubmit} action="/">
 
-          <div className='bg-green-500 border-t-0 rounded-md'>
+          <div className='bg-green-500 border-t-0 flex text-center justify-center rounded-md'>
 
-            <h3 className='font-semibold p-4 text-white text-3xl  ml-[20vh] sm:text-2xl font-serif ' >Create Post Here 😃</h3>
+            <h3 className='font-semibold p-4 text-white sm:text-1xl md:text-2xl sm:text-left font-serif ' >Create Post Here 😃</h3>
 
           </div>
       
           <div className='mt-8 items-center'>
             <label className='ml-5 '  htmlFor="/">Title  </label>
-            <input name='title' className=' p-2 ml-14 mb-2 w-[40%] rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm ' type="text" placeholder='Title' />
+            <input autoComplete='off' name='title' className=' p-2 ml-14 mb-2 w-[40%] rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm ' type="text" placeholder='Title' />
           </div>
 
 
           <div className='mt-8 items-center'>
             <label className='ml-5'  htmlFor="/">Category  </label>
-            <input name='category' className=' p-2 ml-5 mb-2 w-[40%] rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm ' type="text" placeholder='for example Ai tech App' />
+            <input autoComplete='off' name='category' className=' p-2 ml-5 mb-2 w-[40%] rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm ' type="text" placeholder='for example Ai tech App' />
           </div>
 
           <div className='mt-8 items-center'>
             <label className='ml-5'  htmlFor="/">Author  </label>
-            <input name='author' className=' p-2 ml-9 mb-2 w-[40%] rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm ' type="text" placeholder='Enter your name' />
+            <input autoComplete='off' name='author' className=' p-2 ml-9 mb-2 w-[40%] rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm ' type="text" placeholder='Enter your name' />
           </div>
 
 
           <div className='mt-8 items-center'>
             <label className='ml-5'  htmlFor="/">Time  </label>
-            <input name='time' className=' p-2 ml-12 mb-2 w-[40%] rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm ' type="text" placeholder='Average Time to read' />
+            <input autoComplete='off' name='time' className=' p-2 ml-12 mb-2 w-[40%] rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm ' type="text" placeholder='Average Time to read' />
           </div>
 
 
           <div className='mt-8 items-center'>
             <label className='ml-5'  htmlFor="/">Tags  </label>
-            <input name='tags'  className= 'p-2 ml-12 mb-2 w-[40%] rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm ' type="text"  />
+            <input autoComplete='off' name='tags'  className= 'p-2 ml-12 mb-2 w-[40%] rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm ' type="text"  />
           </div>
 
 
           <div className='mt-8  flex flex-col'>
             <label className='ml-5'  htmlFor="/">Content  </label>
-            <textarea name='content' className=' mt-2 ml-5 mr-4 rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm capitalize placeholder:font-light p-2 w-auto h-[15vh] '  type="text" placeholder='Start writing here....' />
+            <textarea autoComplete='off' name='content' className=' mt-2 ml-5 mr-4 rounded-md border focus:outline-none bg-white text-gray-600 text-base font-medium border-green-500 focus:shadow-sm capitalize placeholder:font-light p-2 w-auto h-[15vh] '  type="text" placeholder='Start writing here....' />
           </div>
 
 

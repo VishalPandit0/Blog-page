@@ -55,7 +55,7 @@ const router = createBrowserRouter([
       {
         path: "/blogs/:id",
         element: <BlogOpen/>,
-        loader:({params})=>fetch(`https://se-h33n.onrender.com/blogs/${params.id}`)
+        loader:({params})=>fetch(`https://blogserver-j7ih.onrender.com/blogs/${params.id}`)
       }
     ]
   },
